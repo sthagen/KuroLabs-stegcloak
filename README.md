@@ -9,6 +9,8 @@
   <a href="https://www.npmjs.com/package/stegcloak"> <img src="https://img.shields.io/npm/v/stegcloak?style=plastic" /> </a>
   <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label" />
   <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" />
+  <br>
+  <a href="https://www.producthunt.com/posts/stegcloak?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-stegcloak" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=206296&theme=dark" alt="Stegcloak - Hide secrets in plain text using passwords - Web exploit |    Product Hunt Embed" style="width: 250px; height: 54px;" width="125px" height="27px" /></a>
 </h1>
 <h4 align="center">The Cloak of Invisibility for your texts</h4>
 
@@ -21,7 +23,7 @@ StegCloak is a pure JavaScript steganography module designed in functional progr
 ## Features
 - Protect your invisible secret using passwords and HMAC integrity
 - Cryptographically secure by encrypting the invisible secret using AES-256-CTR.
-- Uses 7 Invisible characters in unicode characters that works everywhere in the web.
+- Uses 6 Invisible characters in unicode characters that works everywhere in the web.
 
   Including the most important ones Tweets, Gmail, Whatsapp, Telegram, Instagram, Facebook etc. 
 
@@ -66,11 +68,13 @@ Options:
 ```
   hide [options] [secret] [cover]
 
-  -f, --file <file>       Extract text from file
-  -n, --nocrypt           If you don't need encryption (default: false)
-  -i, --integrity         If additional security of preventing tampering is needed (default: false)
-  -o, --output <output>   Stream the results to an output file
-  -h, --help              display help for command
+  -fc, --fcover <file>      Extract cover text from file
+  -fs, --fsecret <file>     Extract secret text from file
+  -n, --nocrypt             If you don't need encryption (default: false)
+  -i, --integrity           If additional security of preventing tampering is needed (default: false)
+  -o, --output <output>     Stream the results to an output file
+  -c, --config <file>       Config file
+  -h, --help                display help for command
 
 ```
 
@@ -82,13 +86,19 @@ $ stegcloak reveal
 Options:
 
 ```
-  reveal [cover]
+  reveal [message]
 
-  -f, --file <file>       Extract cover message from file
-  -cp, --clip             Copy cover directly from clipboard
+  -f, --file <file>       Extract message from file
+  -cp, --clip             Copy message directly from clipboard
   -o, --output <output>   Stream the secret to an output file
+  -c, --config <file>     Config file
   -h, --help              display help for command
 ```
+### Additional support
+
+- **STEGCLOAK_PASSWORD** environment variable if set will be used by default as password
+
+- **Config file** support to configure Stegcloak CLI and to avoid prompts. <a href='https://github.com/KuroLabs/stegcloak/wiki/Stegcloak---configuration-file'> Read Config docs here</a>
 
 ## API Usage
 
