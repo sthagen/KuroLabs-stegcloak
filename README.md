@@ -153,7 +153,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT](https://github.com/KuroLabs/stegcloak/blob/master/LICENSE) - Copyright (c) 2020 [Jyothishmathi CV](https://github.com/JyothishmathiCV), [Kandavel A](https://github.com/AK5123), [Mohanasundar M](https://github.com/mohanpierce99)
+[MIT](https://github.com/KuroLabs/stegcloak/blob/master/LICENSE) - Copyright (c) 2020 [Kandavel A](https://github.com/AK5123), [Mohanasundar M](https://github.com/mohanpierce99), [Sujin LK](https://github.com/sujink1999)
 
 ## Acknowledgements
 The StegCloak logo was designed by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>.
